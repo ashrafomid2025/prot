@@ -35,7 +35,7 @@ export default function Hero() {
           <div className="space-y-6 py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[20%] md:block hidden">
             <div className="md:w-[180px] md:h-[180px] imgContainer rounded-full ">
               <img
-                src="../../src/assets/me.jpg"
+                src="./projects/me.jpg"
                 className="w-full h-full rounded-full"
               />
             </div>
