@@ -7,13 +7,30 @@ import {
   Send,
   Twitch,
 } from "lucide-react";
+
+import emailJs from "@emailjs/browser";
 import { cn } from "@/lib/util";
-import { useState } from "react";
+import { useState, useRef } from "react";
 export default function Contact() {
   const [details, setDetails] = useState({ name: "", email: "", message: "" });
-
+  const form = useRef();
   function handleSubmit(e) {
     e.preventDefault();
+    emailJs
+      .sendForm(
+        "service_dee4108",
+        "template_qt5n46q",
+        form.current,
+        "7X9RRkfyM6CU0pUlh"
+      )
+      .then(
+        ((result) => {
+          alert("message sent successfully");
+        },
+        (error) => {
+          alert("something went wrong");
+        })
+      );
     setDetails({ name: "", email: "", message: "" });
   }
   return (
@@ -88,7 +105,7 @@ export default function Contact() {
           </div>
           <div className="bg-card p-8 rounded-lg shadow-2xs ">
             <h3 className="font-semibold mb-6 text-2xl">Send a message</h3>
-            <form className="space-y-3" onSubmit={handleSubmit}>
+            <form ref={form} className="space-y-3" onSubmit={handleSubmit}>
               <div>
                 <label
                   className="block text-sm font-medium mb-2 "
@@ -101,6 +118,9 @@ export default function Contact() {
                   value={details.name}
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="name"
+                  onChange={(e) =>
+                    setDetails({ ...details, name: e.target.value })
+                  }
                   placeholder="Mohammad"
                   required
                 />
@@ -118,6 +138,9 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="email"
                   name="email"
+                  onChange={(e) =>
+                    setDetails({ ...details, email: e.target.value })
+                  }
                   placeholder="mohammad@gmail.com"
                   required
                 />
@@ -134,6 +157,9 @@ export default function Contact() {
                   value={details.message}
                   className="w-full px-4 py-3 h-24 resize-none rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="message"
+                  onChange={(e) =>
+                    setDetails({ ...details, message: e.target.value })
+                  }
                   name="message"
                   placeholder="Hi there, I am writing this to ...."
                   required
