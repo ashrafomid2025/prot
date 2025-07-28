@@ -89,7 +89,10 @@ export default function Contact() {
             <div className="pt-8">
               <h4>Connect with me</h4>
               <div className="flex space-x-4 justify-center font-medium mb-4">
-                <a href="https://www.linkedin.com/in/m-ashraf-omid-91425b353?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEjwY7ry2QFm%2FJosbJvw8iA%3D%3D">
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/m-ashraf-omid-91425b353?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEjwY7ry2QFm%2FJosbJvw8iA%3D%3D"
+                >
                   <Linkedin />
                 </a>
                 <a href="">
