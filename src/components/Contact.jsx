@@ -12,7 +12,6 @@ import emailJs from "@emailjs/browser";
 import { cn } from "@/lib/util";
 import { useState, useRef } from "react";
 export default function Contact() {
-  const [details, setDetails] = useState({ name: "", email: "", message: "" });
   const form = useRef();
   function handleSubmit(e) {
     e.preventDefault();
@@ -23,15 +22,14 @@ export default function Contact() {
         form.current,
         "7X9RRkfyM6CU0pUlh"
       )
-      .then(
-        ((result) => {
-          alert("message sent successfully");
-        },
-        (error) => {
-          alert("something went wrong");
-        })
-      );
-    setDetails({ name: "", email: "", message: "" });
+      .then((result) => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Something went wrong. Please try again.");
+      });
   }
   return (
     <section id="contacts" className="py-24 px-4 relative bg-secondary/30">
@@ -91,7 +89,7 @@ export default function Contact() {
             <div className="pt-8">
               <h4>Connect with me</h4>
               <div className="flex space-x-4 justify-center font-medium mb-4">
-                <a href="">
+                <a href="https://www.linkedin.com/in/m-ashraf-omid-91425b353?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEjwY7ry2QFm%2FJosbJvw8iA%3D%3D">
                   <Linkedin />
                 </a>
                 <a href="">
@@ -115,12 +113,8 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
-                  value={details.name}
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="name"
-                  onChange={(e) =>
-                    setDetails({ ...details, name: e.target.value })
-                  }
                   placeholder="Mohammad"
                   required
                 />
@@ -134,13 +128,9 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
-                  value={details.email}
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="email"
                   name="email"
-                  onChange={(e) =>
-                    setDetails({ ...details, email: e.target.value })
-                  }
                   placeholder="mohammad@gmail.com"
                   required
                 />
@@ -149,17 +139,13 @@ export default function Contact() {
               <div>
                 <label
                   className="block text-sm font-medium mb-2 "
-                  htmlFor="email"
+                  htmlFor="message"
                 >
                   Message
                 </label>
                 <textarea
-                  value={details.message}
                   className="w-full px-4 py-3 h-24 resize-none rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="message"
-                  onChange={(e) =>
-                    setDetails({ ...details, message: e.target.value })
-                  }
                   name="message"
                   placeholder="Hi there, I am writing this to ...."
                   required
