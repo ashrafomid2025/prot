@@ -26,7 +26,7 @@ export default function Hero() {
               and Laravel.
             </p>
             <div className="opacity-0 animate-fade-in-delay-4 pt-2">
-              <a href="#project" className="cosmic-button">
+              <a href="#projects" className="cosmic-button">
                 View my Work
               </a>
             </div>

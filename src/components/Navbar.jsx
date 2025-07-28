@@ -32,7 +32,7 @@ export default function Navbar() {
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground font-play-right">
-              Asharf Omid
+              Ashraf Omid
             </span>{" "}
           </span>
         </a>
