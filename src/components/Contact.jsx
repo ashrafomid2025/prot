@@ -10,7 +10,7 @@ import {
 
 import emailJs from "@emailjs/browser";
 import { cn } from "@/lib/util";
-
+import { useState, useRef } from "react";
 export default function Contact() {
   const form = useRef();
   function handleSubmit(e) {
