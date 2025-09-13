@@ -32,11 +32,11 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="space-y-6 flex justify-center items-center  py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[20%] md:block">
-            <div className="w-64 h-64 md:w-64 md:h-64 md:imgContainer rounded-lg ">
+          <div className="space-y-6 py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[20%] md:block hidden">
+            <div className="md:w-64 md:h-64 imgContainer rounded-lg ">
               <img
                 src="./projects/me1.JPG"
-                className="w-full h-full rounded-lg md:rounded-full"
+                className="w-full h-full rounded-full"
               />
             </div>
           </div>
