@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Mouse } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="space-y-6  md:w-[70%] lg:w-[69%]">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in mr-2">Hi I'm</span>
-              <span className="text-primary opacity-0 animate-fade-in-delay-1 mr-2">
+              <span className="text-primary opacity-0 animate-fade-in-delay-1">
                 Mohammad Ashraf
               </span>
               <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
@@ -43,8 +43,10 @@ export default function Hero() {
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 traform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-small text-muted-foreground mb-2">scroll</span>
-        <ArrowDown className="h-5 w-5 text-primary" />
+        <span className="text-lg text-muted-foreground mb-2">
+          <Mouse size={30} />
+        </span>
+        {/* <ArrowDown className="h-5 w-5 text-primary" /> */}
       </div>
     </section>
     // about
