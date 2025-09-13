@@ -21,10 +21,10 @@ export default function StarBackground() {
     for (let i = 0; i < numberOfStars; i++) {
       newStars.push({
         id: i,
-        size: Math.random() * 3 + 1,
+        size: Math.random() * 4 + 1,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        opacity: Math.random() * 0.5 + 0.5,
+        opacity: Math.random() * 0.4 + 0.4,
         animationDuration: Math.random() * 4 + 2,
       });
     }

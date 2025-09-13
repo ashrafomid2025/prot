@@ -8,7 +8,7 @@ function Skills() {
     { name: "Typescript", level: 89, category: "frontend" },
     { name: "TailwindCSS", level: 98, category: "frontend" },
     { name: "React", level: 80, category: "frontend" },
-    { name: "Bootstrap", level: 90, category: "frontend" },
+    { name: "Next Js", level: 90, category: "frontend" },
 
     { name: "PHP", level: 90, category: "backend" },
     { name: "MYSQL", level: 95, category: "backend" },

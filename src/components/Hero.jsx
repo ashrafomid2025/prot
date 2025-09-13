@@ -5,10 +5,10 @@ export default function Hero() {
     <section>
       <div
         id="hero"
-        className="relative h-screen flex flex-col  items-center justify-center px-4"
+        className="relative h-screen flex flex-col  items-center justify-center px-3"
       >
-        <div className="container md:max-w-[90%] max-w-4xl md:flex md:justify-between md:items-center space-x-8 block mx-auto text-center z-10 ">
-          <div className="space-y-6  md:w-[70%] lg:w-[69%]">
+        <div className="container md:max-w-[98%] max-w-4xl  md:flex  md:justify-between md:items-center space-x-8 block mx-auto text-center z-10 ">
+          <div className="space-y-6 mx-auto  md:w-[70%] lg:w-[69%]">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in mr-2">Hi I'm</span>
               <span className="text-primary opacity-0 animate-fade-in-delay-1">
@@ -18,8 +18,8 @@ export default function Hero() {
                 Omid
               </span>
             </h1>
-            <p>
-              I'm a passionate web developer with over 2 years of hands-on
+            <p className="text-base text-center">
+              I'm a passionate web developer with over 3 years of hands-on
               experience crafting dynamic and responsive web applications. I
               specialize in front-end development using React and Next.js, and
               have a strong command of backend technologies, particularly PHP

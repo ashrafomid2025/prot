@@ -11,7 +11,7 @@ export default function About() {
           <div className="space-y-6 ">
             <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
             <p className="text-muted-foreground">
-              With Over 3 years of experience in web development, I specialize
+              With Over 2 years of experience in web development, I specialize
               in creating responsive, accessable and performant web application
               using modern technologies
             </p>
@@ -39,9 +39,9 @@ export default function About() {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg ">Web Delopment</h4>
+                  <h4 className="font-semibold text-lg ">Web Development</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive web application with modern framworks
+                    Creating responsive web application with React and Next.Js
                   </p>
                 </div>
               </div>
