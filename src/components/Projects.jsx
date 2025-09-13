@@ -4,21 +4,21 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Quiz Application",
+      title: "Blog Web App",
       description:
-        "The quiz application is designed to fetch 10 questions from an API and evaluate responses based on the correct answers provided.",
+        "Blog applications lets you post everything you want in your own space, in your own website. You can get all the latest news and post it inside your own website",
       imgUrl: "./projects/1.png",
-      tags: ["TailwindCss", "Javascript", "HTML", "CSS"],
+      tags: ["Next Js", "Framer Motion", "md"],
       demoUrl: "#",
       githubUrl: "#",
     },
     {
       id: 2,
-      title: "Resturant Web App",
+      title: "Dental Clinic Web App",
       description:
-        "Experience effortless dining reservations with our innovative restaurant app—book your table online in just a few quick clicks.",
+        "Dental Clinic web App to ease appointment booking, posting blogs and getting any information you need about the doctor",
       imgUrl: "./projects/2.png",
-      tags: ["TailwindCSS", "Next", "Javascript"],
+      tags: ["Next Js", "Mail Js", "Framer Motion"],
       demoUrl: "#",
       githubUrl: "#",
     },
@@ -28,7 +28,7 @@ export default function Projects() {
       description:
         "Doctoryab is a user-friendly web and mobile app that makes it easy for customers to book appointments with doctors online—anytime, anywhere",
       imgUrl: "./projects/3.jpg",
-      tags: ["TailwindCss", "Vue.js", "Firebase", "Flutter"],
+      tags: ["Vue.js", "Firebase", "Flutter"],
       demoUrl: "#",
       githubUrl: "#",
     },
