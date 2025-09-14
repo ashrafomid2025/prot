@@ -40,8 +40,8 @@ export default function Skill() {
       height: 80,
     },
     {
-      skill_name: "Redux",
-      Image: "skills/redux.png",
+      skill_name: "React Spring",
+      Image: "skills/reactSpring.png",
       width: 80,
       height: 80,
     },
@@ -99,11 +99,17 @@ export default function Skill() {
       width: 80,
       height: 80,
     },
+    {
+      skill_name: "Laravel",
+      Image: "skills/laravel.png",
+      width: 80,
+      height: 80,
+    },
   ];
   return (
     <div
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full overflow-hidden py-20"
+      className="max-w-6xl mx-auto  flex flex-col items-center justify-center gap-3 h-full overflow-hidden py-20"
       style={{ transform: "scale(0.9)" }}
     >
       <h2 className="text-3xl md:text-5xl font-bold mb-2.5">
