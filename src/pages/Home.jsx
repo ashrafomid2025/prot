@@ -6,6 +6,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Skill from "../components/Skill";
 export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -21,7 +22,8 @@ export const Home = () => {
       <main>
         <Hero />
         <About />
-        <Skills />
+        {/* <Skills /> */}
+        <Skill />
         <Projects />
         <Contact />
       </main>

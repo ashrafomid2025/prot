@@ -204,3 +204,20 @@ body {
   padding: 0;
   text-align: center;
 }
+.search-text {
+  border-right: 4px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(26) forwards infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 22ch; /* animate width to fit 15 characters */
+  }
+}
