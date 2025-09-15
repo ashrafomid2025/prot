@@ -175,9 +175,8 @@ body {
 
     background-image: conic-gradient(
       from var(--angle),
-      hsl(225, 80%, 56%) 30%,
-      transparent 30%,
-      hsl(225, 80%, 65%) 30%
+      hsl(225, 80%, 56%) 60%,
+      transparent
     );
     position: absolute;
     top: 50%;
