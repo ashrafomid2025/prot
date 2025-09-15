@@ -15,8 +15,8 @@ export default function Hero() {
         id="hero"
         className="relative h-screen flex flex-col items-center justify-center px-3"
       >
-        <div className="container md:max-w-[98%] max-w-4xl md:flex md:justify-between md:items-center space-x-8 block mx-auto text-center z-10">
-          <div className="space-y-6 mx-auto md:w-[70%] lg:w-[69%]">
+        <div className="container md:max-w-full max-w-4xl md:flex md:justify-between md:items-center space-x-6 block mx-auto text-center z-10">
+          <div className="space-y-6 mx-auto md:w-[65%] lg:w-[69%] px-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
               <span className="opacity-0 animate-fade-in mr-2">Hi I'm</span>
               <span className="text-primary animate-fade-in-delay-1">
@@ -38,7 +38,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="space-y-6 py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[20%] md:block hidden">
+          <div className="space-y-6 py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[35%] md:block hidden">
             <div className="md:w-64 md:h-64 imgContainer rounded-lg">
               <img
                 src="./projects/me1.JPG"
