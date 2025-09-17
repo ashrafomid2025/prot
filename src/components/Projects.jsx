@@ -18,7 +18,7 @@ export default function Projects() {
       description:
         "Dental Clinic web App to ease appointment booking, posting blogs and getting any information you need about the doctor",
       imgUrl: "./projects/2.png",
-      tags: ["Next Js", "Mail Js", "Framer Motion"],
+      tags: ["Next Js", "React", "Typescript", "Framer Motion"],
       demoUrl: "#",
       githubUrl: "#",
     },
