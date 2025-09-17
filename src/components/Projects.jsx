@@ -32,6 +32,16 @@ export default function Projects() {
       demoUrl: "#",
       githubUrl: "#",
     },
+    {
+      id: 4,
+      title: "QR Code Generator",
+      description:
+        "QR Code Generator helps to save any link you want, just paste the url in the application and get the QR Code, you can save it as svg or png",
+      imgUrl: "./projects/4.png",
+      tags: ["Next Js", "React", "Framer Motion"],
+      demoUrl: "https://barcodeproducer.vercel.app/",
+      githubUrl: "#",
+    },
   ];
   return (
     <section id="projects" className="py-2 px-4 relative">
