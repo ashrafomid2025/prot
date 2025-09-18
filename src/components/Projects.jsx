@@ -4,11 +4,11 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Blog Web App",
+      title: "Blog Web",
       description:
-        "Blog applications lets you post everything you want in your own space, in your own website. You can get all the latest news and post it inside your own website",
+        "Blog applications lets you post everything you want in your own virtual space, in your own website. You can get all the latest news and post it inside your own website",
       imgUrl: "./projects/1.png",
-      tags: ["Next Js", "Framer Motion", "md"],
+      tags: ["Next Js", "Framer Motion", "mark down"],
       demoUrl: "#",
       githubUrl: "#",
     },
