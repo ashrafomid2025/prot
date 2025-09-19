@@ -60,7 +60,7 @@ export default function Projects() {
               key={key}
               className="group bg-card rounded-lg p-4 overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-40 shadow-2xs shadow-primary overflow-hidden ">
+              <div className="h-40 shadow-2xs mt-4 shadow-primary overflow-hidden ">
                 <img
                   src={project.imgUrl}
                   alt={project.title}
