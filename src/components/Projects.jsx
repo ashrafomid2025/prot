@@ -58,9 +58,9 @@ export default function Projects() {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg p-4 overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg p-4 mt-4 overflow-hidden shadow-2xs shadow-primary card-hover"
             >
-              <div className="h-40 shadow-2xs mt-4 shadow-primary overflow-hidden ">
+              <div className="h-40  overflow-hidden ">
                 <img
                   src={project.imgUrl}
                   alt={project.title}
