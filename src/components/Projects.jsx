@@ -54,17 +54,17 @@ export default function Projects() {
           attention to details, performance and user experience
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg p-4 mt-4 overflow-hidden shadow-2xs shadow-primary card-hover"
+              className="group bg-card rounded-lg p-4 mt-4 overflow-hidden shadow-lg card-hover"
             >
-              <div className="h-40  overflow-hidden ">
+              <div className="h-44  overflow-hidden ">
                 <img
                   src={project.imgUrl}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 "
+                  className="w-full h-full object-cover rounded-lg transition-transform duration-500 group-hover:scale-110 "
                 />
               </div>
               <div className="p-1">
