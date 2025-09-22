@@ -25,7 +25,8 @@ export default function About() {
                 Get in touch
               </a>
               <a
-                href="#contact"
+                href="/files/mashrafCV.pdf"
+                download="my_cv.pdf"
                 className="py-2 px-6 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV

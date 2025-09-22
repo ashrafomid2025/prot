@@ -29,7 +29,7 @@ export default function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className={cn(
-        "fixed  left-5 bottom-1.5 z-50 p-2 rounded-full transition-colors duration-300",
+        "fixed  left-5 bottom-2 z-50 p-2 rounded-full border border-primary transition-colors duration-300",
         "focus:outline-hidden "
       )}
     >
