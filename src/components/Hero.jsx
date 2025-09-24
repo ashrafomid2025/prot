@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="container md:max-w-full max-w-4xl md:flex md:justify-between md:items-center space-x-6 block mx-auto text-center z-10">
           <div className="space-y-6 mx-auto md:w-[65%] lg:w-[69%] px-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-              <span className="opacity-0 animate-fade-in mr-2">Hi I'm</span>
+              <h1 className="opacity-0 animate-fade-in mr-2">Hi I'm</h1>
               <span className="text-primary animate-fade-in-delay-1">
                 {text}
               </span>
