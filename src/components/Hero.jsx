@@ -1,4 +1,17 @@
-import { ArrowDown, Mouse } from "lucide-react";
+import {
+  ArrowDown,
+  Code,
+  Github,
+  Globe,
+  GraduationCap,
+  Linkedin,
+  Mail,
+  MapPin,
+  Mouse,
+  SquaresExclude,
+  TwitterIcon,
+  X,
+} from "lucide-react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Hero() {
@@ -16,7 +29,7 @@ export default function Hero() {
         className="relative h-screen flex flex-col items-center justify-center px-3"
       >
         <div className="container md:max-w-full max-w-4xl md:flex md:justify-between md:items-center space-x-6 block mx-auto text-center z-10">
-          <div className="space-y-6 mx-auto md:w-[65%] lg:w-[69%] px-4">
+          <div className="space-y-6 mx-auto md:flex-1/5 px-4">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
               <h1 className="opacity-0 animate-fade-in mr-2">Hi I'm</h1>
               <span className="text-primary animate-fade-in-delay-1">
@@ -38,12 +51,50 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="space-y-6 py-6 lg:w-[40%] md:mt-10 lg:mt-0 md:w-[35%] md:block hidden">
-            <div className="md:w-64 md:h-64 imgContainer rounded-lg">
+          <div className="space-y-6 py-6 flex-1 border rounded-xl md:flex hover:shadow-xl flex-col items-center  hidden">
+            <div className="md:w-48 relative md:h-48 imgContainer rounded-lg">
               <img
-                src="./projects/me1.JPG"
-                className="w-full h-full rounded-full"
+                src="./projects/me.jpeg"
+                className="w-full h-full cursor-none rounded-full object-cover"
               />
+              <div className="absolute top-0 right-0 p-2 backdrop-blur-md rounded-lg animate-bounce">
+                <Globe className="text-primary" />
+              </div>
+              <div className="absolute bottom-0 left-0 p-2 rounded-lg backdrop-blur-md animate-bounce">
+                <Code className="text-primary" />
+              </div>
+            </div>
+
+            <h1 className="font-play-right text-base">Mohammad Ashraf Omid</h1>
+            <p className="flex items-center space-x-4 gap-2">
+              <span>
+                <GraduationCap className="text-primary" />
+              </span>
+              Bachelor of CS from Kabul University
+            </p>
+            <p className="flex items-center  gap-2">
+              <SquaresExclude className="text-primary" />
+              +3 Years experience in Web development
+            </p>
+            <span className="flex items-center space-x-4 gap-2">
+              <MapPin className="text-primary" /> Kabul Afghanistan
+            </span>
+            <div className="flex space-x-4 items-center justify-between p-4">
+              <a
+                href="https://www.linkedin.com/in/m-ashraf-omid-91425b353/"
+                target="_blank"
+              >
+                <Linkedin />
+              </a>
+              <a href="https://github.com/ashrafomid2025" target="_blank">
+                <Github />
+              </a>
+              <a href="mailto:omidmashraf@gmail.com" target="_blank">
+                <Mail />
+              </a>
+              <a href="https://wa.me/+93794842517" target="_blank">
+                <img src="./whatsapp.png" className="h-7  w-7" alt="" />
+              </a>
             </div>
           </div>
         </div>
