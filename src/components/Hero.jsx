@@ -26,7 +26,7 @@ export default function Hero() {
     <section>
       <div
         id="hero"
-        className="relative h-screen flex flex-col items-center justify-center px-3"
+        className="relative min-h-screen md:mt-6 flex flex-col items-center justify-center px-3"
       >
         <div className="container md:max-w-full max-w-4xl md:flex md:justify-between md:items-center space-x-6 block mx-auto text-center z-10">
           <div className="space-y-6 mx-auto md:flex-1/5 px-4">
