@@ -86,7 +86,7 @@ body {
   }
 
   .dark {
-    --background: 222 47% 4%;
+    --background: 230 47% 4%;
     --foreground: 213 31% 91%;
 
     --card: 222 47% 8%;
@@ -202,21 +202,4 @@ body {
   margin: 0 auto;
   padding: 0;
   text-align: center;
-}
-.search-text {
-  border-right: 4px solid;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0;
-  animation: typing 4s steps(26) forwards infinite,
-    cursor 0.4s step-end infinite alternate;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 22ch; /* animate width to fit 15 characters */
-  }
 }

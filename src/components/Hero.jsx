@@ -99,7 +99,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-3 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-3 md:bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-lg text-muted-foreground mb-1">
           <Mouse size={28} />
         </span>
