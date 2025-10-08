@@ -26,10 +26,10 @@ export default function Hero() {
     <section>
       <div
         id="hero"
-        className="relative min-h-screen md:mt-6 flex flex-col items-center justify-center px-3"
+        className="relative min-h-screen mt-6 flex flex-col items-center justify-center px-3"
       >
-        <div className="container md:max-w-full max-w-4xl md:flex md:justify-between md:items-center space-x-6 block mx-auto text-center z-10">
-          <div className="space-y-6 mx-auto md:flex-1/5 px-4">
+        <div className="container md:max-w-full max-w-4xl grid grid-cols-1 gap-5 md:grid-cols-3 text-center z-10">
+          <div className="space-y-6 mx-auto px-4 md:col-span-2 flex flex-col items-center justify-center">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
               <h1 className="opacity-0 animate-fade-in mr-2">Hi I'm</h1>
               <span className="text-primary animate-fade-in-delay-1">
@@ -51,7 +51,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="space-y-6 py-6 flex-1 border rounded-xl md:flex hover:shadow-xl flex-col items-center  hidden">
+          <div className="space-y-6 py-6 flex-1 border rounded-xl md:col-span-1 md:flex hover:shadow-xl flex-col items-center  flex ">
             <div className="md:w-48 relative md:h-48 imgContainer rounded-lg">
               <img
                 src="./projects/me.jpeg"
@@ -73,7 +73,7 @@ export default function Hero() {
               Bachelor of CS from Kabul University
             </p>
             <p className="flex items-center  gap-2">
-              <SquaresExclude className="text-primary" />
+              <SquaresExclude className="text-primary capitalize" />
               +3 Years experience in Web development
             </p>
             <span className="flex items-center space-x-4 gap-2">
@@ -99,9 +99,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-lg text-muted-foreground mb-2">
-          <Mouse size={30} />
+      <div className="absolute bottom-3 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <span className="text-lg text-muted-foreground mb-1">
+          <Mouse size={28} />
         </span>
         {/* <ArrowDown className="h-5 w-5 text-primary" /> */}
       </div>
