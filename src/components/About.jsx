@@ -8,7 +8,7 @@ export default function About() {
           About <span className="text-primary">Me</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 ">
+          <div className="space-y-6  ">
             <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
             <p className="text-muted-foreground">
               With Over 2 years of experience in web development, I specialize
@@ -16,9 +16,9 @@ export default function About() {
               using modern technologies
             </p>
             <p className="text-muted-foreground">
-              With two years of hands-on experience in web development, I’ve
-              built diverse projects and shared my knowledge by teaching and
-              mentoring aspiring developers.
+              In past three years I obtained hands-on experience in web
+              development, I’ve built diverse projects and shared my knowledge
+              by teaching and mentoring aspiring developers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center ">
               <a href="#contacts" className="cosmic-button">
@@ -35,7 +35,7 @@ export default function About() {
           </div>
           <div className="grid grid-cols-1 gap-3">
             <div className="gradient-border p-3 card-hover">
-              <div className="flex rounded-2xl p-3 gap-4 bg-primary/10 items-center">
+              <div className="flex border border-primary/50 hover:border-primary hover:-translate-y-1 transition-all duration-300 rounded-2xl p-3 gap-4 bg-primary/10 items-center">
                 <div className="p-2 rounded-full">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
@@ -48,7 +48,7 @@ export default function About() {
               </div>
             </div>
             <div className="gradient-border p-3 card-hover">
-              <div className="flex rounded-2xl p-3 gap-4 bg-primary/10 items-center">
+              <div className="flex border border-primary/50 hover:border-primary hover:-translate-y-1 transition-all duration-300 rounded-2xl p-3 gap-4 bg-primary/10 items-center">
                 <div className="p-2 rounded-full">
                   <User className="h-6 w-6 text-primary" />
                 </div>
@@ -62,7 +62,7 @@ export default function About() {
               </div>
             </div>
             <div className="gradient-border p-3 card-hover">
-              <div className="flex rounded-2xl p-3 gap-4 bg-primary/10 items-center">
+              <div className="flex rounded-2xl border border-primary/50 hover:border-primary hover:-translate-y-1 transition-all duration-300 p-3 gap-4 bg-primary/10 items-center">
                 <div className="p-2 rounded-full">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
