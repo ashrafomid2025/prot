@@ -16,7 +16,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Hero() {
   const [text] = useTypewriter({
-    words: ["Mohammad Ashraf Omid", "Frontend Developer", "UI/UX Designer"],
+    words: ["Ashraf Omid", "Frontend Developer", "UI/UX Designer"],
     loop: 0,
     typeSpeed: 110,
     deleteSpeed: 85,
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="container md:max-w-full max-w-4xl grid grid-cols-1 gap-5 md:grid-cols-3 text-center z-10">
           <div className="space-y-6 mx-auto px-4 md:col-span-2 flex flex-col items-center justify-center">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tight">
-              <h1 className="opacity-0 animate-fade-in mr-2 bg-gradient-to-l from-primary/80 to-primary via-gray-200 bg-clip-text text-transparent">
+              <h1 className="opacity-0 animate-fade-in mr-2 bg-gradient-to-l from-primary/80 to-primary dark:via-gray-200 via-gray-300 bg-clip-text text-transparent">
                 Salaam I'm
               </h1>
               <span className=" animate-fade-in-delay-1">{text}</span>
