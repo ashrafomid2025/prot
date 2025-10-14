@@ -34,7 +34,7 @@ export default function Hero() {
               <h1 className="opacity-0 animate-fade-in mr-2 bg-gradient-to-l from-primary/80 to-primary dark:via-gray-200 via-gray-300 bg-clip-text text-transparent">
                 Salaam I'm
               </h1>
-              <span className=" animate-fade-in-delay-1">{text}</span>
+              <span className="animate-fade-in-delay-1">{text}</span>
               <Cursor />
             </h1>
             <p className="text-base text-center">

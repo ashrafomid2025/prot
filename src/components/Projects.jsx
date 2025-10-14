@@ -47,7 +47,11 @@ export default function Projects() {
     <section id="projects" className="py-2 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Featured <span className="text-primary"> Projects</span>
+          Featured{" "}
+          <span className="bg-gradient-to-l  from-primary/80 to-primary via-stone-200 bg-clip-text text-transparent">
+            {" "}
+            Projects
+          </span>
         </h2>
         <p className="text-center text-muted-foreground mb-1 mx-auto">
           Here are some of my recent projects. Each project was crafted with

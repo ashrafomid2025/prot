@@ -27,7 +27,10 @@ function Skills() {
       <div className="container mx-auto mx-w-5xl mb-12 text-center font-bold">
         <h2 className="text-3xl md:text-4xl mb-2.5">
           {" "}
-          My <span className="text-primary">Skills</span>
+          My{" "}
+          <span className="bg-gradient-to-l  from-primary/80 to-primary via-stone-200 bg-clip-text text-transparent">
+            Skills
+          </span>
         </h2>
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category, key) => (

@@ -114,7 +114,10 @@ export default function Skill() {
     >
       <h2 className="text-3xl md:text-5xl font-bold mb-2.5">
         {" "}
-        My <span className="text-primary">Skills</span>
+        My{" "}
+        <span className="bg-gradient-to-l  from-primary/80 to-primary via-stone-200 bg-clip-text text-transparent">
+          Skills
+        </span>
       </h2>
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Skill_data.map((image, index) => (
