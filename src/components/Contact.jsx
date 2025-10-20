@@ -22,15 +22,11 @@ export default function Contact() {
       from_name: name,
       from_email: email,
       to_name: "Ashraf Omid",
+      subject: subject,
       message: message,
     };
     emailJs
-      .send(
-        "service_dee4108",
-        "template_w9qyf0r",
-        dataProps,
-        "7X9RRkfyM6CU0pUlh"
-      )
+      .send("service_0", "temp0r", dataProps, "7yM6CU0pUlh")
       .then((result) => {
         alert("Message sent successfully!");
       })
@@ -161,7 +157,7 @@ export default function Contact() {
                   Message Subject
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="subject"
                   value={subject}
