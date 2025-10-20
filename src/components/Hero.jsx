@@ -57,10 +57,10 @@ export default function Hero() {
                 src="./projects/me.jpeg"
                 className="w-full h-full cursor-none rounded-full object-cover"
               />
-              <div className="absolute top-0 right-0 p-2 backdrop-blur-md rounded-lg animate-bounce">
+              <div className="absolute top-0 right-0 p-2 rounded-full bg-primary/30 backdrop-blur-sm animate-float">
                 <Globe className="text-primary" />
               </div>
-              <div className="absolute bottom-0 left-0 p-2 rounded-lg backdrop-blur-md animate-bounce">
+              <div className="absolute bottom-0 left-0 p-2 rounded-full bg-primary/30 backdrop-blur-sm animate-float">
                 <Code className="text-primary" />
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Hero() {
             <h1 className="font-play-right text-base">Mohammad Ashraf Omid</h1>
             <p className="flex items-center space-x-4 gap-2">
               <span>
-                <GraduationCap className="text-primary" />
+                <GraduationCap className="text-primary " />
               </span>
               Bachelor of CS from Kabul University
             </p>
