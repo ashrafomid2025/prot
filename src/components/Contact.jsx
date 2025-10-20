@@ -15,14 +15,20 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
   function handleSubmit(e) {
     e.preventDefault();
-    const dataProps = {};
+    const dataProps = {
+      from_name: name,
+      from_email: email,
+      to_name: "Ashraf Omid",
+      message: message,
+    };
     emailJs
-      .sendForm(
+      .send(
         "service_dee4108",
-        "template_qt5n46q",
-
+        "template_w9qyf0r",
+        dataProps,
         "7X9RRkfyM6CU0pUlh"
       )
       .then((result) => {
@@ -126,7 +132,7 @@ export default function Contact() {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Mohammad"
+                  placeholder="Your name"
                   required
                 />
               </div>
@@ -143,7 +149,24 @@ export default function Contact() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="mohammad@gmail.com"
+                  placeholder="Your Email address"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  className="block text-sm font-medium mb-2 "
+                  htmlFor="subject"
+                >
+                  Message Subject
+                </label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
+                  id="subject"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  placeholder="Message subject"
                   required
                 />
               </div>
@@ -159,8 +182,8 @@ export default function Contact() {
                   className="w-full px-4 py-3 h-24 resize-none rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="message"
                   value={message}
-                  onChange={(e) => e.target.value}
-                  placeholder="Hi there, I am writing this to ...."
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="What is in your mind?"
                   required
                 />
               </div>
