@@ -175,7 +175,7 @@ body {
 
     background-image: conic-gradient(
       from var(--angle),
-      hsl(225, 80%, 56%) 40%,
+      hsl(225, 80%, 56%) 35%,
       transparent
     );
     position: absolute;
@@ -185,7 +185,7 @@ body {
     z-index: -999;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    animation: rotate1 3s infinite linear;
+    animation: rotate1 5s infinite linear;
   }
   @keyframes rotate1 {
     0% {
