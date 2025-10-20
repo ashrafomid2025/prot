@@ -7,6 +7,8 @@ import {
   Send,
   Twitch,
 } from "lucide-react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import emailJs from "@emailjs/browser";
 import { cn } from "@/lib/util";
@@ -33,11 +35,27 @@ export default function Contact() {
         "7X9RRkfyM6CU0pUlh"
       )
       .then((result) => {
-        alert("Message sent successfully!");
+        toast.info(
+          "Thank you for reaching out, we will get back to you soon!",
+          {
+            position: "bottom-center",
+            autoClose: 8000,
+          }
+        );
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setName("");
       })
       .catch((error) => {
-        console.error(error);
-        alert("Something went wrong. Please try again.");
+        toast.error("Sorry, Something went wrong. Please try again.", {
+          position: "bottom-center",
+          autoClose: 8000,
+        });
+        setEmail("");
+        setMessage("");
+        setSubject("");
+        setName("");
       });
   }
   return (
@@ -133,7 +151,7 @@ export default function Contact() {
                   id="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Your name"
+                  placeholder="Mohammad"
                   required
                 />
               </div>
@@ -150,7 +168,7 @@ export default function Contact() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your Email address"
+                  placeholder="Your Email"
                   required
                 />
               </div>
@@ -162,7 +180,7 @@ export default function Contact() {
                   Message Subject
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="subject"
                   value={subject}
@@ -201,6 +219,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 }
