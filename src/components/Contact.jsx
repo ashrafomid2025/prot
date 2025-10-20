@@ -12,19 +12,21 @@ import emailJs from "@emailjs/browser";
 import { cn } from "@/lib/util";
 import { useState, useRef } from "react";
 export default function Contact() {
-  const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
   function handleSubmit(e) {
     e.preventDefault();
+    const dataProps = {};
     emailJs
       .sendForm(
         "service_dee4108",
         "template_qt5n46q",
-        form.current,
+
         "7X9RRkfyM6CU0pUlh"
       )
       .then((result) => {
         alert("Message sent successfully!");
-        form.current.reset();
       })
       .catch((error) => {
         console.error(error);
@@ -110,7 +112,7 @@ export default function Contact() {
           </div>
           <div className="bg-card p-8 rounded-lg shadow-2xs ">
             <h3 className="font-semibold mb-6 text-2xl">Send a message</h3>
-            <form ref={form} className="space-y-3" onSubmit={handleSubmit}>
+            <form className="space-y-3" onSubmit={handleSubmit}>
               <div>
                 <label
                   className="block text-sm font-medium mb-2 "
@@ -122,6 +124,8 @@ export default function Contact() {
                   type="text"
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="Mohammad"
                   required
                 />
@@ -137,7 +141,8 @@ export default function Contact() {
                   type="email"
                   className="w-full px-4 py-3 rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="email"
-                  name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="mohammad@gmail.com"
                   required
                 />
@@ -153,7 +158,8 @@ export default function Contact() {
                 <textarea
                   className="w-full px-4 py-3 h-24 resize-none rounded-md border focus:outline-0 focus:ring-2 focus:ring-primary"
                   id="message"
-                  name="message"
+                  value={message}
+                  onChange={(e) => e.target.value}
                   placeholder="Hi there, I am writing this to ...."
                   required
                 />

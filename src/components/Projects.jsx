@@ -4,6 +4,16 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
+      title: "Exchange Rate and Currency Converter",
+      description:
+        "Experience seamless Afghani currency conversion with real-time, reliable market data.",
+      imgUrl: "./projects/5.png",
+      tags: ["Next Js", "Framer Motion", "Rest Api"],
+      demoUrl: "https://my-sarafi2025.vercel.app/",
+      githubUrl: "https://github.com/ashrafomid2025/sarafi",
+    },
+    {
+      id: 1,
       title: "Blog Web",
       description:
         "Blog applications lets you post everything you want in your own virtual space, in your own website. You can get all the latest news and post it inside your own website",
