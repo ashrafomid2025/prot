@@ -52,6 +52,17 @@ export default function Projects() {
       demoUrl: "https://barcodeproducer.vercel.app/",
       githubUrl: "#",
     },
+    {
+      id: 5,
+      title: "Construction Company Web Application",
+      description:
+        "A construction company app is a specialized Web application designed to streamline operations in the construction industry, bridging the gap between field workers",
+      imgUrl: "./projects/5.png",
+      tags: ["React", "Framer Motion", "Tailwind CSS"],
+      demoUrl: "https://construct2025.vercel.app/",
+      githubUrl:
+        "https://github.com/ashrafomid2025/sharifi-constraction-company",
+    },
   ];
   return (
     <section id="projects" className="py-2 px-4 relative">
