@@ -57,7 +57,7 @@ export default function Projects() {
       title: "Construction Company Web Application",
       description:
         "A construction company app is a specialized Web application designed to streamline operations in the construction industry, bridging the gap between field workers",
-      imgUrl: "./projects/5.png",
+      imgUrl: "./projects/6.png",
       tags: ["React", "Framer Motion", "Tailwind CSS"],
       demoUrl: "https://construct2025.vercel.app/",
       githubUrl:
