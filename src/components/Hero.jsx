@@ -66,19 +66,21 @@ export default function Hero() {
             </div>
 
             <h1 className="font-play-right text-base">Mohammad Ashraf Omid</h1>
-            <p className="flex items-center space-x-4 gap-2">
-              <span>
-                <GraduationCap className="text-primary " />
+            <div className="flex flex-col items-start gap-3">
+              <p className="flex items-center space-x-4 gap-2">
+                <span>
+                  <GraduationCap className="text-primary " />
+                </span>
+                Bachelor of CS from Kabul University
+              </p>
+              <p className="flex items-center  gap-2">
+                <SquaresExclude className="text-primary capitalize" />
+                +3 Years experience in Web development
+              </p>
+              <span className="flex items-center space-x-4 gap-2">
+                <MapPin className="text-primary" /> Kabul Afghanistan
               </span>
-              Bachelor of CS from Kabul University
-            </p>
-            <p className="flex items-center  gap-2">
-              <SquaresExclude className="text-primary capitalize" />
-              +3 Years experience in Web development
-            </p>
-            <span className="flex items-center space-x-4 gap-2">
-              <MapPin className="text-primary" /> Kabul Afghanistan
-            </span>
+            </div>
             <div className="flex space-x-4 items-center justify-between p-4">
               <a
                 href="https://www.linkedin.com/in/m-ashraf-omid-91425b353/"
